@@ -1,9 +1,9 @@
 package com.example.hackathon19;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class homescreen extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
