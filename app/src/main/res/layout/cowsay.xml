@@ -18,7 +18,7 @@
             android:layout_height="237dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/sayInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

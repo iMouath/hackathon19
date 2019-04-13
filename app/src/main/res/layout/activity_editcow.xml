@@ -28,6 +28,7 @@
             android:id="@+id/cowSubmitBtn"
             android:layout_width="match_parent"
             android:layout_height="76dp"
+            android:onClick="onUploadPressed"
             android:text="Upload Cow"
             android:textSize="30sp" />
 

@@ -20,7 +20,7 @@ public class EditCow extends AppCompatActivity {
         setContentView(R.layout.activity_editcow);
         this.submitBtn = (Button)this.findViewById(R.id.cowSubmitBtn);
         this.myCow = (TextView)this.findViewById(R.id.Cowtxt);
-        cowstring = myCow.toString();
+        cowstring = myCow.getText().toString();
     }
 
     public void onUploadPressed(View v){

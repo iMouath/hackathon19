@@ -18,7 +18,8 @@
         <TextView
             android:id="@+id/saytext"
             android:layout_width="match_parent"
-            android:layout_height="74dp" />
+            android:layout_height="74dp"
+            android:text="TempText" />
 
         <Space
             android:layout_width="match_parent"
@@ -38,7 +39,8 @@
                 android:id="@+id/cowtext"
                 android:layout_width="360dp"
                 android:layout_height="573dp"
-                android:maxEms="80" />
+                android:maxEms="80"
+                android:text="TempCow" />
 
             <Space
                 android:layout_width="wrap_content"
