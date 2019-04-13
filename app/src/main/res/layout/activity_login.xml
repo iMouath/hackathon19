@@ -26,7 +26,7 @@
         android:id="@+id/textView"
         android:layout_width="273dp"
         android:layout_height="95dp"
-        android:text="Log in to Cowsay"
+        android:text="@string/log_in_to_cowsay"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <ScrollView
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
-                    android:id="@+id/Email"
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="49dp"
                     android:completionHint="Email"
@@ -64,7 +64,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
@@ -80,14 +80,16 @@
                 android:layout_width="133dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:onClick="onClick"
                 android:text="Login"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/email_sign_up_button"
                 android:layout_width="132dp"
                 android:layout_height="wrap_content"
-                android:text="New to Cowsay? Register Here!" />
+                android:onClick="onClick"
+                android:text="@string/new_to_cowsay_register_here" />
 
         </LinearLayout>
     </ScrollView>
@@ -96,6 +98,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="272dp"
-        app:srcCompat="@drawable/Cowsay_Typical_Output" />
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/cowsay_typical_output_1" />
 
 </LinearLayout>

@@ -1,10 +1,12 @@
 package com.example.hackathon19;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,7 +36,19 @@ public class MainActivity extends AppCompatActivity {
         Button b = (Button)v;
         Intent myIntent = new Intent(MainActivity.this, LoginActivity.class);
 //        myIntent.putExtra("key", value); //Optional parameters
-        MainActivity.this.startActivity(myIntent);
+        MainActivity.this.startActivityForResult(myIntent, 1);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+                if (resultCode == Activity.RESULT_OK) {
+                    FirebaseUser user = (FirebaseUser) data.getExtras().get("firebaseuser");
+                    if (user != null) {
+                        System.out.println(user.getEmail());
+                    }
+                    Toast.makeText(this, user.getEmail(),Toast.LENGTH_LONG).show();
+                }
     }
 
 
