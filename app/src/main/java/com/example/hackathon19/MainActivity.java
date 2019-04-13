@@ -7,19 +7,25 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        FirebaseApp.initializeApp(this);
+        FirebaseApp.initializeApp(this);
 
-        FirebaseApp firebaseApp = FirebaseApp.initializeApp(MainActivity.this);
+        mAuth = FirebaseAuth.getInstance();
 
-        if (firebaseApp != null) {
-            System.out.println(firebaseApp.getOptions());
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser != null) {
+            System.out.println(currentUser.getUid());
         }
 
     }
