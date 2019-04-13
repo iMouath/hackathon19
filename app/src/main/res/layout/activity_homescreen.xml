@@ -19,6 +19,7 @@
             android:id="@+id/SayHomeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="OnClick"
             android:text="Cowsay"
             android:textSize="30sp" />
 
