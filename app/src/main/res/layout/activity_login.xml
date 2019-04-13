@@ -92,4 +92,10 @@
         </LinearLayout>
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        app:srcCompat="@drawable/Cowsay_Typical_Output" />
+
 </LinearLayout>
