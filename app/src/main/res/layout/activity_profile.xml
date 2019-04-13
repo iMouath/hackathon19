@@ -127,14 +127,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/editText4"
+            <Button
+                android:id="@+id/getImgBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:text="Choose Image" />
 
         </LinearLayout>
 
