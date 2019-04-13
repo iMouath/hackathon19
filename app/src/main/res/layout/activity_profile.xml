@@ -31,7 +31,7 @@
                 android:layout_weight="1" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/nameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -63,7 +63,7 @@
                 android:layout_weight="1" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/emailText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -95,7 +95,7 @@
                 android:layout_weight="1" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/pwText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -132,7 +132,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onGetImageClick"
                 android:text="Choose Image" />
+
+            <ImageView
+                android:id="@+id/currAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:srcCompat="@tools:sample/avatars" />
 
         </LinearLayout>
 
@@ -141,9 +149,10 @@
             android:layout_height="109dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/saveBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onSaveBtnClick"
             android:text="Save"
             android:textSize="24sp" />
 
