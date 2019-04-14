@@ -438,5 +438,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 //            showProgress(false);
 //        }
 //    }
+    public void skipBtnPressed(View v)
+    {
+        Intent i = new Intent(this, HomeScreen.class);
+        this.startActivity(i);
+    }
 }
 

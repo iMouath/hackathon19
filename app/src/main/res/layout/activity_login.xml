@@ -90,6 +90,13 @@
                 android:onClick="onClick"
                 android:text="@string/new_to_cowsay_register_here" />
 
+            <Button
+                android:id="@+id/skipbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="skipBtnPressed"
+                android:text="Skip" />
+
         </LinearLayout>
     </ScrollView>
 
