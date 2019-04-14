@@ -18,6 +18,7 @@
             android:id="@+id/SayHomeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="cowsayPressed"
             android:text="Cowsay"
             android:textSize="30sp" />
 
@@ -29,6 +30,7 @@
             android:id="@+id/EditHomeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="editCowPressed"
             android:text="Edit Cow"
             android:textSize="30sp" />
 
@@ -40,7 +42,7 @@
             android:id="@+id/ProfileHomeBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onProfileBtnPressed"
+            android:onClick="ProfilePressed"
             android:text="Profile"
             android:textSize="30sp" />
 

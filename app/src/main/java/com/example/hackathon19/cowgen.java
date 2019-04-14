@@ -4,10 +4,10 @@ import java.util.LinkedList;
 
 public class cowgen {
 
-    public String generate(String str){
-        return cowsay(str);
+    public static String generate(){
+        return cowsay();
     }
-    private String cowsay(String str){
+    private static String cowsay(){
 
         String cowdraw = "" +
                 "        \\   ^__^\n" +
@@ -19,10 +19,10 @@ public class cowgen {
         return cowdraw;
     }
 
-    public String grabSay (String str){
+    public static String grabSay (String str){
         return bubbleText (str);
     }
-    private String bubbleText (String str){
+    private static String bubbleText (String str){
         LinkedList<String> bubble = new LinkedList<>();
         String star = "";
         return star;

@@ -7,12 +7,16 @@ import android.widget.TextView;
 public class cowsaycow extends AppCompatActivity {
 
     private TextView currCow;
+    private TextView sayText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cowsaycow);
         this.currCow = (TextView)this.findViewById(R.id.cowtext);
-        //TODO: this.currCow set to firebase Cow
+        currCow.setText(cowgen.generate());
+        this.sayText = (TextView)this.findViewById((R.id.saytext));
+        sayText.setText(getIntent().getStringExtra("INPUT"));
+
     }
 }
